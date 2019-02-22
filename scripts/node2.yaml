@@ -1,0 +1,21 @@
+# Only support 10.250.0.2 ~ 10.250.254.254
+group:
+  -
+    name: bj
+    nodes:
+      -
+        ip: 10.250.1.2/32
+        cmd: "ping -c3 g.cn"
+      -
+        ip: 10.250.2.2/32
+        cmd: "ping -c3 g.cn"
+      -
+        ip: 10.250.3.2/32
+        cmd: "ping -c3 g.cn"
+    delay: "100ms 10ms 30%"
+    loss: "2% 30%"
+    #duplicate: "2%"
+    rate: "100mbit"
+    #corrupt: "2%"
+
+
